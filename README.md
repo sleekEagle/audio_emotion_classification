@@ -25,3 +25,4 @@ by Terrance DeVries and Graham W. Taylor
 
 ![alt text][https://github.com/sleekEagle/audio_emotion_classification/blob/master/network.pdf]
 
+<center><img src="https://github.com/sleekEagle/audio_emotion_classification/blob/master/network.pdf" height="400"></center>
