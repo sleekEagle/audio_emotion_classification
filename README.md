@@ -23,5 +23,5 @@ This method is based on the paper
 ### Learning Confidence for Out-of-Distribution Detection in Neural Networks
 by Terrance DeVries and Graham W. Taylor
 
-![alt text][network.pdf]
+![alt text][https://github.com/sleekEagle/audio_emotion_classification/blob/master/network.pdf]
 
