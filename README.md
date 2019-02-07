@@ -22,3 +22,6 @@ https://sleekeagle.github.io/
 This method is based on the paper 
 ### Learning Confidence for Out-of-Distribution Detection in Neural Networks
 by Terrance DeVries and Graham W. Taylor
+
+![alt text][network.pdf]
+
