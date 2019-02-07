@@ -1,4 +1,4 @@
-#classify spoken audio into emotion states with deep neural networks
+# classify spoken audio into emotion states with deep neural networks
 
 This is source code for classifying amotions from audio data. 
 This uses deep neural networks to do this. Using python Keras is used to build models and for prediction.
