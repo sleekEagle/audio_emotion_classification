@@ -17,7 +17,7 @@ from keras.utils.vis_utils import plot_model
 
 
 NUM_CLASSES = 6
-extracted_data = "/home/sleek-eagle/research/Emotion_classification/RML/extracted"
+extracted_data = "path/for/extracted/data"
 
 def get_wav_paths_and_emo():
     files = []
@@ -96,9 +96,9 @@ def normalize(v):
     return norm
 
 #conffile is the configuration file for open smile which contain the features set to be calculated
-conffile = '/home/sleek-eagle/research/opensmile-2.3.0/config/IS09_emotion.conf '
+conffile = 'configuration/file/for/openSMILE'
 #outfile is a temp file to store the features temporarily
-outfile = '/home/sleek-eagle/research/Emotion_classification/features.arff'
+outfile = 'temp/out/file/for/features/any/location/this/is/temp'
        
 def get_smile_features(files):
     feature_class = []
@@ -143,7 +143,7 @@ def get_smile_features(files):
 
 def add_noise():
     files = get_wav_paths_and_emo()
-    path = "/home/sleek-eagle/research/Emotion_classification/RML"
+    path = "path/for/root/of/project/"
     out_path = path + "/noise-added"
     noise_path = path + "/noise"
 
@@ -172,7 +172,7 @@ def add_noise():
                     
 def get_wav_paths_emo_noise():
     files = []
-    path = "/home/sleek-eagle/research/Emotion_classification/RML/noise-added/"
+    path = "root/of/project/noise-added/"
     for dirName, subdirList, fileList in os.walk(path):
         for file in fileList:
             file_list = file[0:-4].split("_")

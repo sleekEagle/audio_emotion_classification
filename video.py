@@ -13,8 +13,8 @@ import os
 
 import voice
 
-raw_data = "/home/sleek-eagle/research/Emotion_classification/RML/raw_data"
-extracted = "/home/sleek-eagle/research/Emotion_classification/RML/extracted_data"
+raw_data = "store/row/data/path"
+extracted_data = "path/for/extracted/data"
 
 
 def get_files(path):
@@ -85,16 +85,3 @@ def convert_s_to_HMS(seconds):
     s = "00:00:"
     s+=str(round(seconds,3))
     return s
-    
-def trim_video_save_frames(file,start,end):    
-    file  = "/home/sleek_eagle/research/Emotion_classification/RML/RML_emotion_database_2/s7/f1eng/an1.avi"
-cap = cv2.VideoCapture(file)
-frameRate = cap.get(5) #frame rate
-while(cap.isOpened()):
-    frameId = cap.get(1) #current frame number
-    ret, frame = cap.read()
-    if (ret != True):
-        break
-    if (frameId % math.floor(frameRate) == 0):
-        filename = imagesFolder + "/image_" +  str(int(frameId)) + ".jpg"
-        cv2.imwrite(filename, frame)
